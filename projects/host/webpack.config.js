@@ -37,7 +37,8 @@ module.exports = {
         
         // For hosts (please adjust)
         remotes: {
-            "mfe1": "http://localhost:5000/mfe1remoteEntry.js",
+          // For dynamic we dont need this 
+          // "mfe1": "http://localhost:5000/mfe1remoteEntry.js",
         },
 
         shared: share({

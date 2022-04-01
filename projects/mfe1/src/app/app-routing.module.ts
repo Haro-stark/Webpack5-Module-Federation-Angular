@@ -4,14 +4,14 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
-    pathMatch: 'full'
+    // pathMatch: 'full'
   },
-  {
-    path: 'mfe1',
-    loadChildren: ()=> import("./mfefeature/mfefeature.module").then(m => m.MfefeatureModule)
-  }
+  // {
+  //   path: 'mfe1',
+  //   loadChildren: ()=> import("./mfefeature/mfefeature.module").then(m => m.MfefeatureModule)
+  // }
 ];
 
 @NgModule({

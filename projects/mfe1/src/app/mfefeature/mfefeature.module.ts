@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { MfefeatureRoutingModule } from './mfefeature-routing.module';
+import { MfeFeatureRoutes } from './mfefeature-routing.module';
 import { MfefeatureComponent } from './mfefeature.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -11,7 +11,7 @@ import { MfefeatureComponent } from './mfefeature.component';
   ],
   imports: [
     CommonModule,
-    MfefeatureRoutingModule
+    RouterModule.forChild(MfeFeatureRoutes)
   ]
 })
 export class MfefeatureModule { }

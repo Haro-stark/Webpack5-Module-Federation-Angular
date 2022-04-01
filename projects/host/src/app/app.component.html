@@ -1,4 +1,10 @@
 <h1>Angular MFE Host</h1>
-<a routerLink='/'>Main</a> &#160;
-<a routerLink='/mfe1'>Link to MFE</a>
+<!-- <a routerLink='/'>Main</a> &#160;
+<a routerLink='/mfe1'>Link to MFE</a> -->
+<ul>
+    <li><img src="../assets/angular.png" width="50"></li>
+    <li><a routerLink="/">Home</a></li>
+    <li *ngFor="let mfe of microfrontends"><a [routerLink]="mfe.routePath">{{mfe.displayName}}</a></li>
+</ul>
+
 <router-outlet></router-outlet>
